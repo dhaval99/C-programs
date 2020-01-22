@@ -1,0 +1,26 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+int a,i,j,k,l;
+clrscr();
+printf("\nenter num of rows\t");
+scanf("%d",&a);
+for (i=1;i<=a;i++)
+{
+for (k=1;k<=a-i;k++)
+{
+printf(" ");
+}
+for(j=1;j<=i;j++)
+{
+printf("%d",j);
+}
+for(l=i-1;l>=1;l--)
+{
+printf("%d",l);
+}
+printf("\n");
+}
+getch();
+}
